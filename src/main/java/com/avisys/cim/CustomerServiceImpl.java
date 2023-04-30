@@ -41,4 +41,10 @@ public class CustomerServiceImpl implements CustomerService{
 		return list;
 	}
 
+	@Override
+	public Customer createCustomer(Customer customer) {
+		Customer customerSave = this.customerRepo.save(customer);
+		return customerSave;
+	}
+
 }

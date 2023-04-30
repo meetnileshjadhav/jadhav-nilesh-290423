@@ -1,0 +1,62 @@
+1. http://localhost:8082/customer/
+
+Request Body: 
+{
+        "firstName": "Nilesh",
+        "lastName": "Jadhav",
+        "mobileNumber": "1212178212"
+}
+
+Response:
+New Customer created
+
+2. http://localhost:8082/customer/getall
+
+[
+    {
+        "id": 1,
+        "firstName": "Alan",
+        "lastName": "Smith",
+        "mobileNumber": "9111111111"
+    },
+    {
+        "id": 2,
+        "firstName": "Joe",
+        "lastName": "Turing",
+        "mobileNumber": "9111111112"
+    },
+    {
+        "id": 3,
+        "firstName": "John",
+        "lastName": "Smith",
+        "mobileNumber": "9111111113"
+    },
+    {
+        "id": 4,
+        "firstName": "Kathy",
+        "lastName": "Sierra",
+        "mobileNumber": "9111111114"
+    },
+    {
+        "id": 5,
+        "firstName": "Nilesh",
+        "lastName": "Jadhav",
+        "mobileNumber": "1212178212"
+    }
+]
+
+
+3. http://localhost:8082/customer/
+
+Request Body :
+    {
+        "firstName": "Nilesh",
+        "lastName": "Jadhav",
+        "mobileNumber": "1212178212"
+    }
+
+Response : 
+{
+    "message": "Mobile unique key constaint violation.. Please enter unique mobile number",
+    "status": false
+}

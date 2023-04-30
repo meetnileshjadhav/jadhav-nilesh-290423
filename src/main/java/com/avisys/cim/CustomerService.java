@@ -13,4 +13,6 @@ public interface CustomerService {
 	Customer getCustomerByFirstName(String firstName);
 	
 	List<Customer> getCustomerByLastName(String lastName);
+	
+	Customer createCustomer(Customer customer);
 }
